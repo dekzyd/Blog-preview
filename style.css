@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #f4d04e;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  width: 384px;
+  height: 522px;
+  background-color: #fff;
+  border-radius: 1.3rem;
+  border: 1px black solid;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.card-image {
+  border-radius: 0.6rem;
+}
+
+.tags {
+  background-color: #f4d04e;
+  padding: 4px 12px;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
