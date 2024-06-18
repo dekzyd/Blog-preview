@@ -58,7 +58,6 @@ main {
   background-color: #f4d04e;
   padding: 4px 12px;
   border-radius: 0.25rem;
-  display: inline-block;
   font-weight: 700;
   align-self: flex-start;
 }
