@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ main {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  font-family: "Figtree", sans-serif;
 }
 
 #card {
@@ -20,12 +23,35 @@ main {
   border: 1px black solid;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: space-between;
   padding: 1.5rem;
+  box-shadow: 0.5rem 0.5rem;
 }
 
 .card-image {
   border-radius: 0.6rem;
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.heading {
+  font-weight: 800;
+  font-size: x-large;
+}
+
+.heading:hover {
+  color: #f4d04e;
+}
+
+.card-description {
+  color: #7f7f7f;
+  line-height: 150%;
 }
 
 .tags {
@@ -33,4 +59,28 @@ main {
   padding: 4px 12px;
   border-radius: 0.25rem;
   display: inline-block;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.card-author {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-weight: 700;
+}
+
+.card-author img {
+  width: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+  #card {
+    width: 327px;
+    height: 501px;
+  }
+
+  .heading {
+    font-size: larger;
+  }
 }
